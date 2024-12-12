@@ -1,0 +1,241 @@
+/* 頁面背景 */
+body {
+    background-color: #FFE4E1; /* 整體淡玫瑰色背景 */
+    color: #333;              /* 深色字體，保持對比 */
+    font-family: 'Impact', sans-serif;
+    font-size: 16px; /* 全局字體大小 */
+    line-height: 1.6; /* 行間距 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 設定標題與段落間隔 */
+h1, h2, h3 {
+    color: #D32F2F; /* 紅色 */
+    font-weight: bold;
+}
+
+/* 設定大字體的樣式 */
+.large-text {
+    font-size: 24px;  /* 增大字體大小 */
+    line-height: 1.8;
+}
+
+/* 介紹區域樣式 */
+.intro {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.intro h2 {
+    font-size: 32px;
+    color: #D32F2F; /* 紅色 */
+}
+
+/* 歡迎標語區域 */
+.welcome-message {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.welcome-message h1 {
+    font-size: 36px;
+    color: #D32F2F; /* 紅色 */
+}
+
+/* 特色區域樣式 */
+.highlights {
+    padding: 20px;
+    background-color: #fff; /* 設定白色底 */
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.highlights h2 {
+    font-size: 32px;
+    color: #D32F2F; /* 紅色 */
+}
+
+.highlights ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.highlights li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+/* 特色區域樣式 */
+.features {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+.features ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.features li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* 文字間隔與排版 */
+.features p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* 特色和專題學習區樣式 */
+.specialization {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.specialization h3 {
+    font-size: 24px;
+    color: #D32F2F; /* 紅色 */
+}
+
+.specialization p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+/* 設定頁腳樣式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Header 背景 */
+header {
+    background-color: #FFC0CB; /* 粉紅色背景 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* logo 樣式 */
+.logo {
+    position: relative; /* 使 logo 可以受控定位 */
+    margin-top: 10px; /* 為 logo 頂部添加一些距離，避免與返回按鈕重疊 */
+}
+
+
+/* Navigation 樣式 */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #FFB6C1; /* 淺粉紅背景 */
+    border-radius: 5px;        /* 增加圓角效果 */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* 修改導航列文字大小並加粗 */
+nav ul li a {
+    font-size: 18px; /* 調整字體大小，根據需要增大 */
+    font-weight: bold; /* 加粗字體 */
+    text-decoration: none; /* 移除超連結下劃線 */
+    color: #000; /* 設置字體顏色為黑色，可以根據需要調整 */
+    padding: 10px; /* 加些內邊距讓字型更清晰 */
+    display: block; /* 確保每個項目都是塊狀元素，讓字型更具可讀性 */
+}
+
+/* 鼠標懸停時變色 */
+nav ul li a:hover {
+    color: #0004ff; /* 設定鼠標懸停顏色 */
+}
+
+
+
+
+.logo img {
+    max-width: 200px; /* 限制最大寬度 */
+    height: auto;     /* 高度自適應 */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* 隱藏溢出部分 */
+    text-align: center; /* 圖片置中 */
+}
+
+.hero-slider {
+    display: flex; /* Flex 排列圖片 */
+    transition: transform 0.5s ease-in-out; /* 滑動動畫 */
+    align-items: center; /* 圖片垂直置中 */
+    justify-content: center; /* 圖片水平置中 */
+}
+
+.hero-slider img {
+    width: auto; /* 使用原始寬度 */
+    height: auto; /* 使用原始高度 */
+    max-width: 100%; /* 防止超出容器 */
+    display: block;
+    margin: 0 auto; /* 圖片水平置中 */
+}
+
+/* 設置全頁字體為標楷體 (DFKai-SB) */
+body {
+    font-family: 'DFKai-SB', 'Microsoft JhengHei', 'Impact', sans-serif;
+}
+
+/* 設置標題字體為標楷體 */
+h1, h2, h3 {
+    font-family: 'DFKai-SB', 'Microsoft JhengHei', 'Impact', sans-serif;
+}
+
+/* 設置段落文字為標楷體 */
+p {
+    font-family: 'DFKai-SB', 'Microsoft JhengHei', 'Impact', sans-serif;
+}
+
+/* 螢光筆效果的樣式 */
+.highlight {
+    background-color: yellow; /* 黃色背景 */
+    color: black; /* 文字顏色為黑色 */
+    font-weight: bold; /* 加粗 */
+    padding: 0 5px; /* 內邊距，使文字看起來更突顯 */
+}
+
+/* 返回按鈕樣式 */
+.back-button {
+    position: fixed; /* 固定在頁面 */
+    top: 60px; /* 從頂部開始，讓它遠離 logo */
+    left: 20px; /* 保持在頁面左側 */
+    z-index: 1000; /* 確保按鈕在其他元素之上 */
+    transition: opacity 0.3s;
+}
+
+
+/* 返回按鈕的圖片樣式 */
+.back-button img {
+    width: 40px; /* 設定圖片大小 */
+    height: auto; /* 自動保持比例 */
+}
+
+/* 當鼠標懸停時的透明度變化 */
+.back-button:hover img {
+    opacity: 0.8; /* 鼠標懸停時透明度降低 */
+}
