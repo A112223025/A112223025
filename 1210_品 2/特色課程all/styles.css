@@ -9,6 +9,37 @@ body {
     padding: 0;
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 10;
+}
+
+li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #FFC0CB;
+    color: white;
+    
+}
+
 /* 設定標題與段落間隔 */
 h1, h2, h3 {
     color: #D32F2F; /* 紅色 */

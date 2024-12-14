@@ -72,7 +72,7 @@ header {
         color: #333; /* 文字顏色 */
         font-size: 30px;
         padding: 5px 10px;
-        border-radius: 5px;
+        border-radius: 1px;
         background-color: #FFC0CB; /* 背景顏色 */
         transition: background-color 0.3s ease;
         }

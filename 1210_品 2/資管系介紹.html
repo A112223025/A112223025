@@ -4,13 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世新大學資訊管理系</title>
-     <!-- 引入樣式表 -->
+    <!-- 引入樣式表 -->
     <link rel="stylesheet" href="styles.css">
-    
+    <style>
+        
+        .ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    background-color: #b1ac87;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 24px;  /* Increase font size here */
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.ellipse:hover {
+    background-color: #dcb9ba;
+}
+
+.ellipse:active {
+    background-color: #c48186;
+}
+
+.mouse-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+h1 {
+    color: #423f3f;
+}
+
+    </style>
+
+
 </head>
 
 <body>
-    <a href="javascript:history.back()" class="back-button">
+     <!-- 返回按鈕 -->
+     <a href="javascript:history.back()" class="back-button">
         <img src="images/返回.jpg" alt="返回">
     </a>
     <header>
@@ -48,6 +90,38 @@
             </ul>
         </nav>
     </header>
+    
+    
+    <body>
+        <br>
+        <h1>高中生專區</h1>
+        <br>
+        <div> <a href="https://www.youtube.com/watch?v=PSIIk4MLkPo&t=1s" target="_blank" class="ellipse">
+            資管系簡介
+            <img src="images/mouse-icon.png" alt="鼠標圖示" class="mouse-icon">
+         </a></div>
+         <br>
+         <div> <a href="https://youtu.be/Fm7BSHRJGOw" target="_blank" class="ellipse">
+            智慧網路應用組介紹
+            <img src="images/mouse-icon.png" alt="鼠標圖示" class="mouse-icon">
+         </a></div>
+         <br>
+         <div> <a href="https://youtu.be/601Vxl9uh0g" target="_blank" class="ellipse">
+            資訊科技組介紹
+            <img src="images/mouse-icon.png" alt="鼠標圖示" class="mouse-icon">
+         </a></div>
+         <br>
+         <div> <a href="https://youtu.be/jkLy2DmbSt4" target="_blank" class="ellipse">
+            資訊管理組介紹
+            <img src="images/mouse-icon.png" alt="鼠標圖示" class="mouse-icon">
+         </a></div>
+         <br>
+         <br>
+
+    </body>
+    
+
+    
 
     <footer>
         <p>2024 世新大學資管系 | All Rights Reserved</p>

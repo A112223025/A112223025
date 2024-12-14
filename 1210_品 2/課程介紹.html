@@ -1,318 +1,89 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
- <!-- 返回按鈕 -->
- <a href="javascript:history.back()" class="back-button">
-    <img src="images/返回.jpg" alt="返回">
-</a>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>課程介紹 - 世新大學資管系</title>
+    <title>世新大學資訊管理系</title>
+     <!-- 引入樣式表 -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        hr {
-            border: 0;
-            border-top: 5px solid #FFE4E1; /* 增加分隔線的粗細 */
-            margin: 40px 0;  /* 增加上下間距 */
-        }
-    </style>
-    <style>
-        /* 設置頁面 margin 和 padding 讓內容不會被擠壓 */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* 讓 header 容器固定在頁面頂部 */
-        header {
-            position: relative;
-            padding: 20px;
-        }
-
-        /* 設置 logo 的位置，讓它在 header 中居中顯示 */
-        .logo img {
-            display: block;
-            margin: 0 auto;
-        }
-
-        /* 讓導航欄固定在頁面右上角 */
-        nav {
-            position: absolute; /* 絕對定位 */
-            top: 30; /* 固定在頁面頂部 */
-            right: 0; /* 固定在頁面右側 */
-            padding: 30px; /* 給導航欄一些內邊距 */
-        }
-
-        /* 設置 ul 和 li 的樣式，使連結並排顯示 */
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex; /* 使用 Flexbox 讓 li 並排顯示 */
-            gap: 20px; /* 連結之間的間距 */
-        }
-
-        nav li {
-            margin: 0;
-        }
-
-        /* 設置 a 標籤的樣式 */
-        nav a {
-            text-decoration: none;
-            color: #333; /* 文字顏色 */
-            font-size: 30px;
-            padding: 5px 10px;
-            border-radius: 5px;
-            background-color: #FFC0CB; /* 背景顏色 */
-            transition: background-color 0.3s ease;
-        }
-
-        /* 設置 hover 效果 */
-        
-
-        .table-1 th {
-            background-color: #f6b513;
-            border: 2px solid #FFE4E1;
-            margin-bottom: 50px;
-        }
-        .table-1 td {
-            border: 2px solid #f6b513;
-        }
-
-        .table-2 th {
-            background-color: #87CEEB;
-            border: 2px solid #FFE4E1;
-            margin-bottom: 50px;
-        }
-        .table-2 td {
-            border: 2px solid #87CEEB;
-        }
-
-        .table-3 th {
-            background-color: #ebeb87;
-            border: 2px solid #FFE4E1;
-            margin-bottom: 50px;
-        }
-        .table-3 td {
-            border: 2px solid #ebeb87;
-        }
-
-        
-
-        table {
-            width: 80%;
-            border-collapse: collapse; /* 合併邊框 */
-            margin-top: 20px auto;
-            border: 2px solid #ffffff;
-            justify-content: center;
-        }
-    </style>
+    
 </head>
-
 <body>
+    <!-- 返回按鈕 -->
+    <a href="javascript:history.back()" class="back-button">
+        <img src="images/返回.jpg" alt="返回">
+    </a>
     <header>
         <div class="logo">
-            <img src="shu.jpg" height="100" width="100">
+            <img src="images/logo.jpg" alt="世新大學資管系 Logo" class="logo-img">
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="學程簡介.html">學程介紹</a></li>
-                <li><a href="特色課程.html">特色課程</a></li> 
+                <li><a href="課程介紹.html">關於課程</a></li>
+                <li class="dropdown">
+                    <a href="課程特色.html">課程特色</a>
+                    <div class="dropdown-menu">
+                        <a href="人工智慧科技應用.html">人工智慧科技應用</a>
+                        <a href="元宇宙與區塊鏈.html">元宇宙與區塊鏈</a>
+                        <a href="區塊鏈與數位貨幣.html">區塊鏈與數位貨幣</a>
+                        <a href="大數據資料分析.html">大數據資料分析</a>
+                        <a href="智慧企業與雲端應用.html">智慧企業與雲端應用</a>
+                        <a href="智慧物聯與雲端服務.html">智慧物聯與雲端服務</a>
+                        <a href="生成式AI.html">生成式AI</a>
+                        <a href="資訊安全.html">資訊安全</a>
+                    </div>
+                </li>
+                <li><a href="師資介紹.html">師資介紹</a></li>
+                <li><a href="學生作品.html">學生作品</a></li>
+                <li><a href="校園活動.html">校園活動</a></li>
+                <li class="dropdown">
+                    <a>招生資訊</a>
+                    <div class="dropdown-menu">
+                        <a href="資管系介紹.html">資管系介紹</a>
+                        <a href="學長姐的話.html">學長姐的話</a>
+                    </div>
+                </li>
+                <li><a href="聯絡我們.html">聯絡我們</a></li>
             </ul>
         </nav>
     </header>
+    <style>
+        section{
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            text-align: left;
+        }
+    </style>
 
-    <hr>
-    
+    <section>
+        <h1>簡介</h1>
+        <p>世新資管系以其獨特的跨領域結合與實務導向學習，成為全國唯一專注於資訊科技與商務傳播的學系。不僅擁有頂尖的傳播資源，更強調以數據智能驅動商務傳播，讓學生成為具備多元技能的斜槓人才。 【專題導向式學習】 世新資管特別重視專題導向學習，學生透過「資訊產品創意思考」課程，擬定專題方向，再透過修課規畫逐步將創意實踐成資訊創新作品。</p>
+    </section>
+    <section>
+        <h1>【畢製對接企業實習】</h1>
+        <p>學生整合四年所學，在畢業製作展覽展示成果，企業也受邀參與，並提供實習媒合機會，112學年度實習單位有：安侯企管、統一資訊、精誠資訊、叡揚資訊、資誠(PwC)、瀚資資訊、鼎新電腦、神通資訊、新光人壽、群益證券、探網科技、百事益國際、聚上雲、狀態網際網路、天微資訊、動力安全資訊、捷智商訊科技、台灣用友、普鴻資訊股份有限公司、興運整合資訊等逾20家企業，部分學生於畢業後於原實習單位轉正職，實現學用無縫銜接。</p>
+    </section>
+    <section>
+        <h1>【多元學習探索】</h1>
+        <p>資管系課程極具彈性和多樣性，開辦數個學分學程引領同學修課，如「大數據學程」、「企業資源規劃學程」、「人工智慧科技應用學程」等，課程更涵蓋人工智慧、大數據、智慧物聯、區塊鏈、元宇宙、資訊安全、遊戲製作等前沿科技，讓學生能依興趣探索不同資訊領域，確立職涯方向。</p>
+    </section>
+    <section>
+        <h1>【優質學習環境】</h1>
+        <p>雲端學習中心、AI內容創製中心及三大研究中心，年年設備升級，確保學生使用最新軟硬體進行學習，強化就業競爭力。</p>
+    </section>
 
-        <table class="table-1">
-            <thead>
-                <tr>
-                    <th>組別</th>
-                    <th>資管組</th>
-                    <th>資科組</th>
-                    <th>智網組</th>
-                </tr>
-            </thead>
-            
-            <tr>
-                <td>
-                    教育目標
-                </td>
-                <td>
-                    1.人工智慧應用能力<br>
-                    <span class="highlight">2.商務數據分析能力</span><br>
-                    <span class="highlight">3.智慧企業應用ERP、CRM人才培養</span><br>
-                    <span class="highlight">4.數位轉型與創新能力</span><br>
-                    5.數位媒體科技應用能力<br>
-                </td>
-                <td colspan="2">
-                    1.人工智慧應用與開發能力 <br>
-                    2.智慧物聯應用與開發能力<br>
-                    3.雲端平台規畫與管理能力<br>
-                    4.遊戲設計與製作能力<br>
-                    5.數位媒體科技創新與應用能力<br>
-                </td>
-                
-            </tr>
-
-            <tr>
-                <td>
-                    共同課程
-                </td>
-                <td colspan="3">
-                    管理學、程式設計與AI協作、大數據導論、系統分析與設計、資料庫系統、電腦網路、網頁程式設計、行動裝置程式設計、畢業專題
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    專業課程
-                </td>
-
-                <td>
-                    智慧企業導論、數據分析技法、雲端入門、雲端計算平台、商業智慧、AI賦能商模轉型與創新、顧客關係管理、企業資源規劃實務等
-                </td>
-
-                <td colspan="2">
-                    生成式AI應用開發、人工智慧兼機器學習、電腦視覺與AI圖像生成、遊戲製作、元宇宙AR/VR、資訊安全、智慧機器人應用、語音生成與對話應用、雲端架構與管理、智慧聯網、人工智慧應用數學、深度學習實務等
-                </td>
-
-                
-            </tr>
-    
-        </table>
-
-        <hr>
-
-        <table class="table-2">
-            <thead>
-                <tr>
-                    <th>學制</th>
-                    <th>碩士班</th>
-                    <th>碩士在職班</th>
-                </tr>
-            </thead>
-            
-            <tr>
-                <td>
-                    教育目標
-                </td>
-                <td>
-                    1.培養企業資訊<br>
-                    2.技術研發及電腦網路通訊人才<br>
-                    3.學生可從事資訊產業研發及資訊應用<br>
-                    4.培養學術研究能力<br>
-                </td>
-                <td>
-                    1.人工智慧應用與開發能力 <br>
-                    2.智慧物聯應用與開發能力<br>
-                    3.雲端平台規畫與管理能力<br>
-                    4.遊戲設計與製作能力<br>
-                    5.數位媒體科技創新與應用能力<br>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    專業課程
-                </td>
-                <td colspan="2">
-                    生成式AI 應用實務、國際企業管理實務、管理大師講座、人力資源管理,大數據資料探勘、企業資源規劃、研 究方法、高等行動通訊、高等資料庫、高等資訊安全、高等電腦網路、電子商務之經營模式、網路創業專題、高 等多媒體色彩科技與應用、機器學習與深度學習實務、人工智慧個案研究、高等作業系統、高等電腦繪圖、高等 網路管理、高等應用統計學、無線網路規劃與容量管理、電子商務市場策略研究、雲端運算、0高等電腦視覺與 深度學習應用、創新創意與創業專題、數據洞悉與視覺化、大數據資料庫系統、數位及創新行銷、全球產業分析、 多變項分析、行動通訊責務、專案管理實務、Python資料科學程式設計、企業經營責務、數位轉型與創業、組 織理論與管理實務、雲端管理實務、大數據分析、產業實務專題、產業數位轉型個案應用
-                </td>
-            </tr>
-    
-        </table>
-
-        <hr>
+    <section>
+        <h1>【傑出表現】</h1>
+        <p>1.鼓勵學生於就學期間考取證照並提供獎勵措施，近兩年考取專業證照高達300人次<br>
+            2.每年學生在全國資訊應用服務創新競賽和國科會大專生專題研究計畫中屢獲殊榮，例如「2024 第 29 屆大專校院資訊應用服務創新競賽」，在全國逾百校參與、上千支隊伍中脫穎而出，共入圍了9件作品14個獎項；2023年參與校外競賽獲得逾12項獎座;2022年參與校外競賽獲得逾10項獎座，學生的實力和創意獲得企業高度肯定，為升學與就業鋪設成功之路。</p>
+    </section>
+    <section>
+        <h1 style="justify-content: center;">世新資管，結合理論與實務、科技與傳播，成就無限可能！</h1>
         
-        <table class="table-3">
-            <thead>
-                <tr>
-                    <th>\<br>\</th>
-                    <th>產業電子化</th>
-                    <th>企業資源規劃</th>
-                    <th>大數據課程</th>
-                    <th>人工智慧科技應用</th>
-                    <th>智慧物聯網(微學程)</th>
-                </tr>
-            </thead>
-            
-            <tr>
-                <td>
-                    目標
-                </td>
-                <td>
-                    培養網際網路時代資訊化社會所需要的產業電子化人才 
-                </td>
+    </section>
 
-                <td>
-                    培養企業e化所需的企業資源規劃專業人才
-                </td>
-
-                <td>
-                    培養大數據運算與資料分析所需之相關專業人才
-                </td>
-
-                <td>
-                    培育人工智慧相關產業所需的整合性科技人才,以協助產業進行智動化升級
-                </td>
-
-                <td>
-                    為培育智慧物聯網專業人才,提升同學在相關領域的實務與創新能力,並符合科技發展潮流
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    核心課程
-                </td>
-
-                <td>
-                    1.商業智慧<br>
-                    2.知識管理<br>
-                    3.顧客關係管理<br>
-                </td>
-                    
-                <td>
-                    1.企業概論<br>
-                    2.企業資源規劃<br>
-                    3.企業資源規劃實務<br>
-                </td>
-
-                <td>
-                    1.數據分析技法<br>
-                    2.智慧企業洞悉<br>
-                    3.資料科學應用<br>
-                    4.數據洞悉與視覺化<br>
-                    5.機器學習應用<br>
-                </td>
-
-                <td>
-                    1.人工智慧/機器學習<br>
-                    2.深度學習實務<br>
-                    3.電腦視覺<br>
-                    4.智慧機器人<br>
-                    5.語音生成與對話<br>
-                    6.生成式AI應用開發<br>
-                </td>
-
-                <td>
-                    1.雲端運算<br>
-                    2.智慧聯網<br>
-                    3.資訊安全實務<br>
-                    4.全端網頁程式設計與應用<br>
-                </td>
-            </tr>
     
-        </table>
-    
-
-        <footer>
-            <p>© 2024 世新大學資管系 | All Rights Reserved</p>
-        </footer>
-
-        <script src="scripts.js"></script>
-    </body>
-</html>
+</body>
