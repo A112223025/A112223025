@@ -27,3 +27,28 @@ let currentIndex = 0; // 初始索引
 
 // 自動輪播 (可選)
 setInterval(nextSlide, 3000); // 每 5 秒切換一次
+
+
+const scrollList = document.getElementById('scroll-list');
+const items = scrollList.querySelectorAll('li');
+const itemHeight = items[0].offsetHeight;
+let index = 0;
+
+function scrollStep() {
+    index++;
+    if (index >= items.length) {
+        index = 0;
+        scrollList.style.transition = 'none'; // 關閉動畫以瞬間回到頂部
+        scrollList.style.transform = `translateY(0)`;
+        setTimeout(() => {
+            scrollList.style.transition = 'transform 0.5s ease-in-out'; // 恢復動畫
+        }, 50);
+    } else {
+        scrollList.style.transform = `translateY(-${index * itemHeight}px)`;
+    }
+}
+
+// 每2秒滾動一次
+setInterval(scrollStep, 2000);
+
+

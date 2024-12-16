@@ -6,6 +6,73 @@
     <title>世新大學資訊管理系</title>
      <!-- 引入樣式表 -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #f7f7f7;
+            border-radius: 30px;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 90%;
+            border: 2px solid #7f7b7b;
+            
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            white-space: nowrap;
+            background-color: #bc9495;
+            
+        }
+
+        .scroll-container {
+            flex-grow: 1;
+            height: 40px; /* 單行高度 */
+            overflow: hidden;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .scroll-container ul {
+            position: absolute;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            transition: transform 0.5s ease-in-out; /* 平滑滾動效果 */
+        }
+
+        .scroll-container li {
+            height: 50px; /* 單行高度 */
+            line-height: 40px; /* 垂直居中 */
+            font-size: 22px;
+            white-space: nowrap;
+            
+        }
+
+        .scroll-container a {
+            color: #8f4f56;
+            text-decoration: none;
+            background-color: #f7f7f7;
+        }
+
+        .scroll-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
     
 </head>
 <body>
@@ -15,12 +82,12 @@
     </a>
     <header>
         <div class="logo">
-            <img src="images/logo.jpg" alt="世新大學資管系 Logo" class="logo-img">
+            <img src="images/logo.png" alt="世新大學資管系 Logo" class="logo-img">
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="課程介紹.html">關於課程</a></li>
+                <li><a>關於課程</a></li>
                 <li class="dropdown">
                     <a href="課程特色.html">課程特色</a>
                     <div class="dropdown-menu">
@@ -36,7 +103,6 @@
                 </li>
                 <li><a href="師資介紹.html">師資介紹</a></li>
                 <li><a href="學生作品.html">學生作品</a></li>
-                <li><a href="校園活動.html">校園活動</a></li>
                 <li class="dropdown">
                     <a>招生資訊</a>
                     <div class="dropdown-menu">
@@ -66,12 +132,36 @@
     <button class="slider-button prev" onclick="prevSlide()">‹</button>
     <button class="slider-button next" onclick="nextSlide()">›</button>
 </section>
+<br>
+<section class="scroll-section">
+    <div class="section-container">
+        <div class="section-title">專區</div>
+        <div class="scroll-container">
+            <ul id="scroll-list">
+                <li><b><a href="課程特色.html">課程特色</a></b></li><br>
+                <li><b><a href="師資介紹.html">師資介紹</a></b></li><br>
+                <li><b><a href="學生作品.html">學生作品</a></b></li><br>
+                <li><b><a href="資管系介紹.html">資管系介紹</a></b></li><br>
+                <li><b><a href="學長姐的話.html">學長姐的話</a></b></li><br>
+                <li><b><a href="聯絡我們.html">聯絡我們</a></b></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<hr>
+
 
 
     <!-- 歡迎標語 -->
     <section class="welcome-message">
         <h1>歡迎來到世新大學資訊管理系</h1>
         <p>探索最新的資訊科技與管理課程，成為未來的領袖。</p>
+        <p style="background-color: #FFE4B5;">
+            116 台北市木柵路一段111號6樓(M622)<br>
+            TEL : (02)22368225轉63360<br>
+            Email: <a href="mailto:im@mail.shu.edu.tw">im@mail.shu.edu.tw</a>
+        </p>
+        
     </section>
 
     <section class="highlights">
